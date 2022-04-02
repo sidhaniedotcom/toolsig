@@ -13,14 +13,12 @@ $ [License](#LICENSE)
 $ [Other Information](#OTHER-INFORMATION)
 
 ## Default or Basic Usage
-         ```
-
+```
 	 git clone https://github.com/sidhaniedotcom/toolsig
 	 cd toolsig
 	 npm i
 	 node index.js
-
-	```
+```
 ## Tutorial on PC/LAPTOP [OS]
 	# Download & Install Git for Windows (32/64bit)
 	# Download & Install NodeJs for Windows (Recommend Use NodeJS LTS (32/64bit))
