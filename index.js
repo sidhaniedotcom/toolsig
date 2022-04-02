@@ -1,4 +1,4 @@
-const { chalk, inquirer, print } = require("./tools/index.js");
+const { chalk, inquirer, print } = require("./index.js");
 var moment = require("moment");
 var colors = require("colors");
 var userHome = require("user-home");
@@ -52,21 +52,21 @@ const menuQuestion = {
 const main = async () => {
     try {
         const { choice } = await inquirer.prompt(menuQuestion);
-        choice == questionTools[0] && require("./tools/info.js");
-        choice == questionTools[1] && require("./tools/liketimeline.js");
+        choice == questionTools[0] && require("./info.js");
+        choice == questionTools[1] && require("./liketimeline.js");
         choice == questionTools[2] && require("./tools/liketarget.js");
-        choice == questionTools[3] && require("./tools/delallmedia.js");
-        choice == questionTools[4] && require("./tools/flonly.js");
-        choice == questionTools[5] && require("./tools/lconly.js");
-        choice == questionTools[6] && require("./tools/fftauto.js");
-        choice == questionTools[7] && require("./tools/fftbetaauto.js");
-        choice == questionTools[8] && require("./tools/fftautov2.js");
-        choice == questionTools[9] && require("./tools/fftdmauto.js");
-        choice == questionTools[10] && require("./tools/fftdmbetaauto.js");
-        choice == questionTools[11] && require("./tools/fhtauto.js");
-        choice == questionTools[12] && require("./tools/fltauto.js");
-        choice == questionTools[13] && require("./tools/unfollowall.js");
-        choice == questionTools[14] && require("./tools/unfollnotfollback.js");
+        choice == questionTools[3] && require("./delallmedia.js");
+        choice == questionTools[4] && require("./flonly.js");
+        choice == questionTools[5] && require("./lconly.js");
+        choice == questionTools[6] && require("./fftauto.js");
+        choice == questionTools[7] && require("./fftbetaauto.js");
+        choice == questionTools[8] && require("./fftautov2.js");
+        choice == questionTools[9] && require("./fftdmauto.js");
+        choice == questionTools[10] && require("./fftdmbetaauto.js");
+        choice == questionTools[11] && require("./fhtauto.js");
+        choice == questionTools[12] && require("./fltauto.js");
+        choice == questionTools[13] && require("./unfollowall.js");
+        choice == questionTools[14] && require("./unfollnotfollback.js");
         choice == questionTools[15] && process.exit();
     } catch (err) {
         print(err, "err");
@@ -81,8 +81,8 @@ console.log(chalk`{bold.green
    ▀▀▀  ▀█▄▀▪ ▀█▄▀▪.▀▀▀  ▀▀▀▀ ▀▀▀·▀▀▀▀ 
 
   Ξ TITLE  : toolsig v4.0
-  Ξ EMAIL  : officialputuid@hack.id
-  Ξ UPDATE : Wednesday, August 4, 2021
+  Ξ EMAIL  : sidhanie.com@gmail.com
+  Ξ UPDATE : Wednesday, August 4, 2020
 
   116 111 111 108 115 105 103  118 51 
   }`);
@@ -93,9 +93,9 @@ console.log("  Ξ YOUIP  : ".bold.red + addresses);
 console.log(chalk`{bold.red   •••••••••••••••••••••••••••••••••••••••••}`);
 console.log(chalk`{bold.yellow
   Github ••••••••••••••••••••••••••••••••••
-  : @ccocot . @aldinp16 . @rifqihaidar
-  : @dilame . @ikiganteng . @masokky
+  : @sidhaniedotcom
+  Telegram ••••••••••••••••••••••••••••••••
+  : @termuxsidhanie
   •••••••••••••••••••••••••••••••••••••••••
-  : IPutuJayaAdiPranata & DedeKurniawan
-  : Thanks To All Member Sharing Gils Blog }\n`);
+  : Sidhanie & Termux Sidhanie }\n`);
 main();
