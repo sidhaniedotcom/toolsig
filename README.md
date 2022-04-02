@@ -30,7 +30,7 @@ $ [Other Information](#OTHER-INFORMATION)
 	$ node index.js
 
 ## Tutorial on Termux [ANDROID]
-	 ```
+```
          pkg upgrade && pkg update
 	 pkg install git
 	 pkg install nodejs-lts
@@ -38,8 +38,7 @@ $ [Other Information](#OTHER-INFORMATION)
 	 cd toolsig
 	 npm i
 	 node index.js
-
-         ```
+```
 ## Tutorial on C9io/CodeAnywhere [WEB-CLOUD-BASED]
    	 ```
          Login c9.io/login | https://codeanywhere.com/login
